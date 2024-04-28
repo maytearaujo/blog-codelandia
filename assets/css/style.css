@@ -1,0 +1,133 @@
+/*     font-family: 'Inter', sans-serif;
+ */
+
+:root {
+  --cor-cinza: #afabb6;
+  --cor-preta: #17171a;
+  --cor-branco: #ffffff;
+  --cor-marrom: #e07b67;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: var(--cor-preta);
+  color: var(--cor-branco);
+
+  font-family: "Space Grotesk", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #252529;
+
+  width: 100%;
+}
+
+main {
+  padding: 20rem;
+  /* border: solid red; */
+  width: auto;
+}
+
+h1 {
+  color: var(--cor-marrom);
+}
+
+span {
+  color: var(--cor-branco);
+}
+
+.div-busca {
+  width: 100%;
+  height: 50px;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+
+  border: 2px;
+  border-radius: 8px;
+  padding: 16px 24px;
+  gap: 12px;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  background-color: #202024;
+  border: solid #252529 2px;
+}
+
+.div-busca input {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 8px;
+  border-color: #252529 2px;
+  background-color: #202024;
+  color: #afabb6;
+}
+
+main {
+  padding: 40px 24px;
+  height: 143vh;
+
+  justify-content: space-between;
+}
+
+.assunto {
+  border: solid #252529;
+  border-radius: 8px;
+  padding: 32px 24px;
+  margin: 0 0 50px 0;
+}
+
+.assunto:hover {
+  border: solid #e07b67;
+}
+
+.assunto-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: var(--cor-marrom);
+}
+
+.assunto-header img:active {
+  background-image: url(/img/icon-heart-active.jpg);
+}
+
+.assunto-main h2 {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.assunto-main p {
+  color: var(--cor-cinza);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25.6px;
+}
+
+#icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: #574ae801;
+  stroke: #e07b67;
+  stroke-width: 7;
+  transition: fill 0.3s;
+  cursor: pointer;
+}
+
+#icon.filled,
+#icon:hover {
+  fill: #e07b67;
+}
