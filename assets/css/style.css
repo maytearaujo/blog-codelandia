@@ -11,6 +11,7 @@
 * {
   box-sizing: border-box;
   padding: 0;
+  margin: 0;
   border: 0;
 }
 
@@ -22,13 +23,22 @@ body {
 }
 
 header {
+  /* border: solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
 
   background-color: #252529;
 
   width: 100%;
+
+  /* width: 1,920px; */
+  height: 12rem;
+  /* padding: 64px 0px 64px 0px; */
+  /* gap: 48px; */
+  /* border: 0px 0px 2px 0px; */
+  /* opacity: 0px; */
 }
 
 main {
@@ -46,8 +56,8 @@ span {
 }
 
 .div-busca {
-  width: 100%;
-  height: 50px;
+  width: 60%;
+  height: 2.6rem;
 
   font-family: "Inter", sans-serif;
   font-weight: 500;
@@ -63,13 +73,13 @@ span {
 
   background-color: #202024;
   border: solid #252529 2px;
+  border-radius: 8px;
 }
 
 .div-busca input {
   width: 100%;
   height: 2.5rem;
-  border-radius: 8px;
-  border-color: #252529 2px;
+  /* border-color: #252529 2px; */
   background-color: #202024;
   color: #afabb6;
 }
@@ -119,7 +129,7 @@ main {
 
 #icon,
 #icon1,
-#icon2 { 
+#icon2 {
   width: 1.4rem;
   height: 1.4rem;
   fill: #574ae801;
@@ -129,9 +139,11 @@ main {
   cursor: pointer;
 }
 
-#icon.filled, #icon:hover, 
-#icon1.filled, #icon1:hover, 
-#icon2.filled, #icon2:hover 
-{
+#icon.filled,
+#icon:hover,
+#icon1.filled,
+#icon1:hover,
+#icon2.filled,
+#icon2:hover {
   fill: #e07b67;
 }
