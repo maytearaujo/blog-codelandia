@@ -117,7 +117,9 @@ main {
   line-height: 25.6px;
 }
 
-#icon {
+#icon,
+#icon1,
+#icon2 { 
   width: 1.4rem;
   height: 1.4rem;
   fill: #574ae801;
@@ -127,7 +129,9 @@ main {
   cursor: pointer;
 }
 
-#icon.filled,
-#icon:hover {
+#icon.filled, #icon:hover, 
+#icon1.filled, #icon1:hover, 
+#icon2.filled, #icon2:hover 
+{
   fill: #e07b67;
 }
